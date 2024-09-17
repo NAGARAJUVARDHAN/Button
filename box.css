@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+    height: 40vw;
+    
+}
+
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 200px;
+    height: 80px;
+    /* background-color: rgb(178, 200, 212); */
+    background-color: aliceblue;
+    border-radius: 100px;
+}
+
+#inside1 {
+    width: 250px;
+    height: 40px;
+    background: linear-gradient(45deg,red, yellow);
+    rotate: -30deg;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: relative;
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+button {
+    position: absolute;
+    width: 194px;
+    height: 70px;
+    border-radius: 100px;
+    margin-top: 80px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+    
